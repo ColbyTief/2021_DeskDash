@@ -14,7 +14,7 @@ html {
 }
 
 #content {
-	min-height: 655px;
+	min-height: 667px;
 	background-color: white;
 }
 
@@ -140,4 +140,5 @@ footer {
 	background: #FF7000;
 	font-family: sans-serif;
 	padding: 30px;
+	height: 52
 }
