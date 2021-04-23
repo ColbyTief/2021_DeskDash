@@ -23,4 +23,11 @@ $(function() {
   $shoppingCart.animate({
     opacity: '70%'
   }, 1000)
+  
+  $shoppingCart.hover(function() {
+    $(this).css({ opacity: '100%'});
+  },
+   function() {
+    $(this).css({ opacity: '70%'});
+  });
 });
