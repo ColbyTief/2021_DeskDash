@@ -1,0 +1,16 @@
+img {
+  height: 100px;
+  width: 100px;
+}
+img#dmcnew_bio_pic {
+  position: relative;
+  left: 2em;
+  top: 2em;
+}
+
+#content p {
+  position: relative;
+  left: 8.5em;
+  bottom: 4em;
+}
+
