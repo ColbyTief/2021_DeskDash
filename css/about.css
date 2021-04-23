@@ -1,0 +1,54 @@
+#content {
+  min-height: fit-content;
+}
+
+main {
+  display: block;
+}
+
+#foodBanner {
+  width: 60%;
+  opacity: .8;
+  padding-right: 4%;
+  border-radius: 20px;
+  float: left;
+}
+
+#deliveryPic {
+  width: 60%;
+  opacity: 1;
+  padding-left: 4%;
+  border-radius: 20px;
+  float: right;  
+}
+
+#mapPic {
+  width: 60%;
+  opacity: .8;
+  padding-right: 4%;
+  border-radius: 20px;
+  float: left;
+}
+
+main article {
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: auto;
+  padding-top: 12%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+p {
+  padding-top: 2%;
+}
+
+#promise {
+  padding-top: 20%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+#promise span {
+  font-style: italic;
+}
