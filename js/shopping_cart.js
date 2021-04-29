@@ -16,18 +16,18 @@
 //  })
 //});
 
-$(function() {
-  var $shoppingCart = $('#shoppingCart');
-  $shoppingCart.animate({left: "-=500"}, 500);
-  $shoppingCart.animate({left: "+=500"}, 1000);
-  $shoppingCart.animate({
-    opacity: '70%'
-  }, 1000)
+// $(function() {
+//   var $shoppingCart = $('#shoppingCart');
+//   $shoppingCart.animate({left: "-=500"}, 500);
+//   $shoppingCart.animate({left: "+=500"}, 1000);
+//   $shoppingCart.animate({
+//     opacity: '70%'
+//   }, 1000)
   
-  $shoppingCart.hover(function() {
-    $(this).css({ opacity: '100%'});
-  },
-   function() {
-    $(this).css({ opacity: '70%'});
-  });
-});
+//   $shoppingCart.hover(function() {
+//     $(this).css({ opacity: '100%'});
+//   },
+//    function() {
+//     $(this).css({ opacity: '70%'});
+//   });
+// });
