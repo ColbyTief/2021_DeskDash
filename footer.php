@@ -15,6 +15,11 @@
         background: #FF7000;
         font-family: sans-serif;
         padding: 30px;
-        height: 52
+        height: 52px;
+    }
+
+    footer p {
+        position: relative;
+        top: 12px
     }
 </style>

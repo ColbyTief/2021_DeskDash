@@ -1,4 +1,12 @@
-img {
+#content {
+  position: relative;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+#content img {
   height: 100px;
   width: 100px;
 }

@@ -3,14 +3,11 @@
 <head>
 	<title>About</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/deskDash.css">
 	<link rel="stylesheet" href="css/about.css">
 	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.transform2d.js"></script>
-	<script src="js/shopping_cart.js"></script>
+
 
 </head>
 
@@ -18,9 +15,9 @@
 	<?php
 	require('header.php');
 	?>
-	<h3>About Us</h3>
+	
 	<div id="content">
-
+		<h3>About Us</h3>
 		<main>
 			<article>
 				<img src="images/foodMain.jpeg" id="foodBanner">
@@ -57,7 +54,6 @@
 
 		<h1 id="promise">Our promise to you is: <span>Always Fresh in Taste and Time!</span></h1>
 
-		<div id="content"> </div>
 	</div>
 	<?php
 	require('footer.php');

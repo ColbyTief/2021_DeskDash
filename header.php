@@ -1,7 +1,7 @@
 <a href="#login" id="login">Login</a>
 <img src="images/cart.png" id="shoppingCart">
 <header>
-    <a href="index.html"><img src="images/indexlogo.png" id="menu_img"></a>
+    <a href="index.php"><img src="images/indexlogo.png" id="menu_img"></a>
     <div class="menu">
         <ul>
             <li><a href="order.php" class="button">Order</a></li>
@@ -101,8 +101,10 @@ background-size: cover;
 
 
     .menu {
-        float: right;
-        padding-right: 100px;
+        position: relative;
+        width: 600px;
+        min-width: 300px;
+        margin: 0 auto;
     }
 
     .menu ul {
@@ -133,7 +135,10 @@ background-size: cover;
         border-bottom: 6px solid orange;
     }
 
-    header h3 {
+    h3 {
+        position: relative;
+        top: 15px;
+        text-align: center;
         font-size: 30px;
         font-family: 'lato';
         text-shadow: -2px 2px #d8652c;
