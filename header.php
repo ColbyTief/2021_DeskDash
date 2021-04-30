@@ -1,5 +1,5 @@
 <a href="#login" id="login">Login</a>
-<img src="images/cart.png" id="shoppingCart">
+<a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
 <header>
     <a href="index.php"><img src="images/indexlogo.png" id="menu_img"></a>
     <div class="menu">

@@ -4,8 +4,6 @@
 	<title>About</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/about.css">
-	<link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 
 
