@@ -18,26 +18,38 @@
 	
 
 	<div id="content">
-		<h3>Meet Our Dasherz!</h3>
-		<img src="images/dmcnew_bio_pic.PNG" id="dmcnew_bio_pic">
 
-		<p>NAME: Dylan McNew</p>
-		
-		<p>BIO: One of the fastest dasherz around </p>
-		<p>Delivering your food in a timely manner is </p>
-		<p>of number one importance to me.Also a co-developer </p>
-		<p>of the Desk Dash website.</p>
+<div id="main">
 
-		<img src="***PUT YOUR PROFILE IMAGE HERE***" id="dmcnew_bio_pic">
+	<article>
+		<img src="images/dmcnew_bio_pic.PNG" id="bio_pic">
 
-		<p>NAME: name</p>
+		<p><strong>NAME:<br><br>Dylan McNew</strong></p>
 
 		<p>
-			BIO: info aboutyourselfhere.
+			<strong>BIO:</strong><br>One of the fastest dasherz around <br>
+			Delivering your food in a timely manner is <br>
+			of number one importance to me. Also a co-developer <br>
+			of the Desk Dash website.
 		</p>
+	</article>
 
+	<article> 
+		<img src="images/ben_headShot.png" id="bio_pic">
 
-		<div id="left_img"> </div>
+		<p><strong>NAME:<br><br>Ben Steinmetz</strong></p>
+
+		<p>
+			<strong>BIO:</strong><br>He may be a little on the older side, but<br>
+			don't think all that rockin' hair slows this guy<br>
+			down. He is also one of the co-developers of the<br>
+			Desk Dash website.
+		</p>
+	</article>
+
+</div>
+
+</div>
 	</div>
 	<?php
 	require('footer.php');

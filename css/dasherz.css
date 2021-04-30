@@ -1,5 +1,4 @@
 #content {
-<<<<<<< Updated upstream
   position: relative;
 }
 
@@ -10,9 +9,9 @@ body{
 #content img {
   height: 100px;
   width: 100px;
-=======
+
   min-height: fit-content;
->>>>>>> Stashed changes
+
 }
 
 #main {
