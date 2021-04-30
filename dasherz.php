@@ -15,6 +15,8 @@
 
 	<div id="content">
 
+	<h3>Meet the Dasherz Team!</h3>
+
 <div id="main">
 
 	<article>
