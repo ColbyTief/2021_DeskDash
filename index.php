@@ -36,6 +36,8 @@
 					We know how busy you are with classes and the seemingly unending barrage of papers to be typed and read, so why should your next food choice be another point of stress? We are here to make food simple and easy for you, so your energy can go where you need it. 
 					<br><br>
 					Don't stress, call a Dasher!
+					<br><br> 
+					They are the best at what they do ~ For more info, check out our Dasherz page!
 				</p>
 			</article>
 
