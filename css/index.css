@@ -1,0 +1,37 @@
+main {
+  letter-spacing: 2px;
+  display: block;
+  z-index: 1;
+  padding-bottom: 60px;
+}
+
+#indexPizza {
+  border-radius: 15px;
+  float: right;
+}
+
+#students {
+  height: 50%;
+  width: auto;
+  margin-bottom: 3%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px;
+}
+
+#multiDevices {
+  margin-bottom: 3%;
+  border-radius: 8px;
+}
+
+main article {
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: auto;
+  padding-top: 8%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#content p {
+  padding-top: 2%;
+}

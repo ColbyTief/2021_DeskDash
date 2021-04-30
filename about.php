@@ -22,7 +22,7 @@
 			<article>
 				<img src="images/foodMain.jpeg" id="foodBanner">
 
-				<h2>What is Desk Dash?</h2><br>
+				<h2>History Lesson</h2><br>
 
 				<p>
 					Desk Dash is a technology platform that helps connect students with the food they love. Founded
