@@ -1,4 +1,5 @@
 #content {
+<<<<<<< Updated upstream
   position: relative;
 }
 
@@ -9,16 +10,33 @@ body{
 #content img {
   height: 100px;
   width: 100px;
-}
-img#dmcnew_bio_pic {
-  position: relative;
-  left: 2em;
-  top: 2em;
+=======
+  min-height: fit-content;
+>>>>>>> Stashed changes
 }
 
-#content p {
-  position: relative;
-  left: 8.5em;
-  bottom: 4em;
+#main {
+  padding-bottom: 8%;
 }
 
+#main article {
+  text-align: center;
+  padding-top: 3em;
+  padding-left: 2em;
+}
+
+#main p {
+  padding-top: 2em;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+#bio_pic {
+  border: 5px solid #F97432;
+  border-style: ridge;
+  border-radius: 10%;
+  position: relative;
+}

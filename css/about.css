@@ -3,12 +3,22 @@
 }
 
 main {
+  letter-spacing: 2px;
   display: block;
+  z-index: 1;
+}
+
+#curvedLine {
+  height: 200%;
+  width: fit-content;
+  position: absolute;
+  margin-left: 10%;
+  z-index: 0;
+  opacity: 50%;
 }
 
 #foodBanner {
   width: 60%;
-  opacity: .8;
   padding-right: 4%;
   border-radius: 20px;
   float: left;
@@ -16,7 +26,6 @@ main {
 
 #deliveryPic {
   width: 60%;
-  opacity: 1;
   padding-left: 4%;
   border-radius: 20px;
   float: right;  
@@ -24,7 +33,6 @@ main {
 
 #mapPic {
   width: 60%;
-  opacity: .8;
   padding-right: 4%;
   border-radius: 20px;
   float: left;
@@ -39,7 +47,12 @@ main article {
 	padding-right: 5%;
 }
 
+<<<<<<< Updated upstream
 #content p {
+=======
+p {
+  z-index: 1;
+>>>>>>> Stashed changes
   padding-top: 2%;
 }
 
@@ -51,4 +64,5 @@ main article {
 
 #promise span {
   font-style: italic;
+  text-shadow: 2px 2px 5px #F97432;
 }

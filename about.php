@@ -17,8 +17,12 @@
 	?>
 	
 	<div id="content">
+<<<<<<< Updated upstream:about.php
 		<h3>About Us</h3>
 		<main>
+=======
+    <main>
+>>>>>>> Stashed changes:about.html
 			<article>
 				<img src="images/foodMain.jpeg" id="foodBanner">
 
@@ -55,9 +59,27 @@
 		<h1 id="promise">Our promise to you is: <span>Always Fresh in Taste and Time!</span></h1>
 
 	</div>
+<<<<<<< Updated upstream:about.php
 	<?php
 	require('footer.php');
 	?>
+=======
+
+	<footer>
+		<ul>
+			<li>
+				<address>
+					<a href="mailto:quadpod@sticky.net">Contact us!</a>
+				</address>
+			</li>
+			<li>
+				&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/index.html">Desk Dash Home</a>
+			</li> 
+		</ul>
+		<br>
+		<p>&copy; 2021 Quad Pod Development. All rights reserved.</p>
+	</footer>
+>>>>>>> Stashed changes:about.html
 
 </body>
 
