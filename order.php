@@ -12,6 +12,7 @@
 	?>
 	<div id="content">
 		<h3>What are you looking for?</h3>
+		
 	</div>
 	<?php
 	require('footer.php');
