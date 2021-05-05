@@ -1,32 +1,44 @@
-<footer>
-		<ul>
-			<li>
-				<address>
-					<a href="mailto:quadpod@sticky.net">Contact us!</a>
-				</address>
-			</li>
-			<li>
-				&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/index.php">Desk Dash Home</a>
-			</li> 
-		</ul>
-		<br>
-		<p>&copy; 2021 Quad Pod Development. All rights reserved.</p>
-	</footer>
+<footer class="footer">
+
+<ul>
+  <a href="/index.html"><img src="images/homeImage.png" id="footerHome"></a>
+  <a href="mailto:quadpod@sticky.net"><img src="images/emailImage.png" id="footerEmail"></a>
+  <a href="/contact.html"><img src="images/dasherzFooter.png" id="footerDash"></a>
+</ul>
+
+<small>&copy; 2021 Quad Pod Development. All rights reserved.</small>
+</footer>
 
 <style type="text/css">
-footer {
-	background: #FF7000;
-	font-family: sans-serif;
-	padding: 30px;
-	height: 53px;
+.footer {
+  background: #FF7000;
+  font-family: sans-serif;
+  padding: 30px;
+  height: 52;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-footer a {
-	text-decoration: none;
+.footer > ul > a {
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  height: 30px;
 }
 
-footer li {
-  display: inline-block;
+.footer > ul > a > img {
+  height: 40px;
+  width: auto;
+  padding-left: 10px;
 }
+
+
+.footer ul {
+  display: block;
+  margin-left: auto;
+  font-size: 1.5rem;
+  margin-bottom: auto;
+}
+
 
 </style>

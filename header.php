@@ -1,18 +1,3 @@
-<head class="pageHeader">
-    <title>Contact Us!</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/deskDash.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.transform2d.js"></script>
-    <script src="js/shopping_cart.js"></script>
-
-</head>
-
 <a href="login.php" id="login">Login</a>
 <a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
 <header>
