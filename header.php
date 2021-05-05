@@ -140,8 +140,6 @@ background-size: cover;
         top: 15px;
         text-align: center;
         font-size: 30px;
-        font-family: 'lato';
-        text-shadow: -2px 2px #d8652c;
 
     }
 
