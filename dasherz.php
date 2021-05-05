@@ -46,7 +46,7 @@
 	</article>
 
 	<article> 
-		<img src="images/SamProfile.png" class="bio_pic">
+		<img src="images/SamProfile.jpg" class="bio_pic">
 
 		<p><strong>NAME:<br><br>Sam TePaske</strong></p>
 
