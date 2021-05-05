@@ -35,6 +35,7 @@ article {
 #pNum {
   font-size: 30px;
   padding-left: 45%;
+  text-decoration: none;
 }
 
 #textTitle {
