@@ -32,7 +32,7 @@ article {
   padding-bottom: 3%;
 }
 
-#pNum {
+article > #pNum {
   font-size: 30px;
   padding-left: 45%;
   text-decoration: none;
