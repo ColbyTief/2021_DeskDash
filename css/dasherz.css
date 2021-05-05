@@ -8,7 +8,7 @@ body{
 
 #content img {
   height: 250px;
-  width: 250px;
+  width: auto;
 
   min-height: fit-content;
 
@@ -32,7 +32,7 @@ img {
   width: 300px;
 }
 
-#bio_pic {
+.bio_pic {
   border: 8px solid #F97432;
   border-style: ridge;
   border-radius: 10%;
