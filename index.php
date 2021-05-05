@@ -15,7 +15,7 @@
 
 		<main>
 
-			<article>
+			<article class='pizza'>
 				<img src="images/pizza.jpeg" id="indexPizza">
 
 				<h2>What is Desk Dash?</h2><br>

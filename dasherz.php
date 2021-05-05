@@ -20,7 +20,7 @@
 <div id="main">
 
 	<article>
-		<img src="images/dmcnew_bio_pic.PNG" id="bio_pic">
+		<img src="images/dmcnew_bio_pic.PNG" class="bio_pic">
 
 		<p><strong>NAME:<br><br>Dylan McNew</strong></p>
 
@@ -33,7 +33,7 @@
 	</article>
 
 	<article> 
-		<img src="images/ben_headShot.png" id="bio_pic">
+		<img src="images/ben_headShot.png" class="bio_pic">
 
 		<p><strong>NAME:<br><br>Ben Steinmetz</strong></p>
 

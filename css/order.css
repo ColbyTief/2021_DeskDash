@@ -1,0 +1,27 @@
+body {
+    position: relative;
+}
+#typelist {
+position: relative;
+top: 30px;
+width: 50%;
+margin: auto;
+text-align: center;
+list-style-type: none;
+
+}
+
+#typelist li {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 5px;
+    padding: 5px 0px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 15px;
+}
+
+#typelist a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

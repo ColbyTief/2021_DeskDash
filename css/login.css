@@ -1,0 +1,8 @@
+#content p {
+  padding-top: 2%;
+}
+form {
+  position: relative;
+  left: 25em;
+  top: 5em;
+}

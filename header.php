@@ -1,4 +1,4 @@
-<a href="#login" id="login">Login</a>
+<a href="login.php" id="login">Login</a>
 <a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
 <header>
     <a href="index.php"><img src="images/indexlogo.png" id="menu_img"></a>
