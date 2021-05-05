@@ -8,7 +8,7 @@ body{
 
 #content img {
   height: 250px;
-  width: 250px;
+  width: auto;
 
   min-height: fit-content;
 
