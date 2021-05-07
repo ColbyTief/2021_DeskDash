@@ -23,7 +23,7 @@
         <input type="password" placeholder="Password" name="passWord" id="passWord">
         <br><br>
               
-        <input type="submit" name="clickIt" value="Log In">
+        <input type="submit" name="clickIt" value="Log In" id="submit">
       </form>
   </div>
 	<?php

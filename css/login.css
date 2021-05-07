@@ -6,11 +6,27 @@
 
 body{
   font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif; 
-  font-size:12px;
+  font-size:18px;
 }
 
 form {
   position: relative;
-  left: 25em;
+  left: 15em;
   top: 5em;
+}
+
+#submit {
+  background: #F97432;
+  margin: 0 auto;
+  width: 8%;
+  padding: .5%;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+#submit:hover {
+  background: orange;
 }
