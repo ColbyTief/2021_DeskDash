@@ -18,7 +18,7 @@
 <?php
 require('header.php');
 
-require ('sanitize.php');
+require ('functions.php');
 
 // Include the code to connect to our DB and login to it.
 require ('dbConnect.php');
