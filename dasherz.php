@@ -53,8 +53,8 @@
 		<p>
 			<strong>BIO:</strong><br>Reliable delivery is Sam's specialty, you<br>
 			can bet your bottom cheese curd that he'll have<br>
-			order out faster than a Busch Latte on a Fiday night<br>
-			down. He is also one of the co-developers of the<br>
+			order out faster than a Busch Latte on a Fiday night.<br>
+			He is also one of the co-developers of the<br>
 			Desk Dash website.
 		</p>
 	</article>

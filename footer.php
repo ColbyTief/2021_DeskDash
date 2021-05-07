@@ -1,9 +1,9 @@
 <footer class="footer">
 
 <ul>
-  <a href="/index.html"><img src="images/homeImage.png" id="footerHome"></a>
-  <a href="mailto:quadpod@sticky.net"><img src="images/emailImage.png" id="footerEmail"></a>
-  <a href="/contact.html"><img src="images/dasherzFooter.png" id="footerDash"></a>
+  <a href="index.html"><img src="images/homeImage.png" id="footerHome"></a>
+  <a href="contact.html"><img src="images/emailImage.png" id="footerEmail"></a>
+  <a href="dasherz.html"><img src="images/dasherzFooter.png" id="footerDash"></a>
 </ul>
 
 <small>&copy; 2021 Quad Pod Development. All rights reserved.</small>
