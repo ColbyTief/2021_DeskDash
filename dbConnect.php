@@ -1,28 +1,29 @@
 <?php
-
-// 1. Connect to DB server
-// 2. Select our database
-// 
-// and check for exceptions
+/*
+1. Connect to the DB Server
+2. Select our database
+3. Provide account information
+4. Check for exceptions
+*/
 try {
-    
-    // Create a new instance of a PDO object
-    $pdo = new PDO('mysql:host=localhost:3306;dbname=deskdash', 'root', '1qaz3edc5tgb');
-    
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $pdo->exec('SET NAMES "utf8"');
-    
+
+  // Create an instance of the PDO class
+  $pdo = new PDO('mysql:host=localhost:3306;dbname=deskdash', 'colby', 'mysql');
+
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $pdo->exec('SET NAMES "utf8"');
+
 } catch (PDOException $ex) {
 
-    $error = 'Unable to connect to the database server<br><br>' . $ex->getMessage();
-    
-    // if ($closeSelect) {
-    //     echo "</select>";
-    //     $closeSelect = false;
-    // }
-    
-    // include 'error.html.php';
-    throw $ex;   // also show SQL system (syntax) errors  
-    //exit();
-    
+  $error = 'Unable to connect to the database server<br><br>' . $ex->getMessage();
+
+  if ($closeSelect) {
+    echo "</select>";
+    $closeSelect = false;
+  }
+
+  include 'error.html.php';
+  throw $ex;
+  //exit();
+
 }

@@ -21,7 +21,7 @@ require('header.php');
 require ('sanitize.php');
 
 // Include the code to connect to our DB and login to it.
-require ('dbConnect_2.php');
+require ('dbConnect.php');
 
 // Run the passed-in query returning a result set (PDOStatement
 // object) on success or generate an error and/or exit.  This 
