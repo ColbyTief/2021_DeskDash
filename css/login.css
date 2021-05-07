@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
 #content p {
   padding-top: 2%;
 }
+
+body{
+  font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif; 
+  font-size:12px;
+}
+
 form {
   position: relative;
   left: 25em;
