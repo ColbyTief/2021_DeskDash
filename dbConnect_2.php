@@ -8,7 +8,7 @@
 try {
 
   // Create an instance of the PDO class
-  $pdo = new PDO('mysql:host=localhost:3306;dbname=deskdash2', 'root', 'M103120Mm#');
+  $pdo = new PDO('mysql:host=localhost:3306;dbname=deskdash', 'root', 'M103120Mm#');
 
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $pdo->exec('SET NAMES "utf8"');
