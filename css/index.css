@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
 main {
   letter-spacing: 2px;
   display: block;
@@ -38,4 +40,109 @@ main article {
 
 #content p {
   padding-top: 2%;
+}
+
+#favText {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-family: 'Zen Dots';
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.row {
+  float: right;
+  width: 30%;
+  padding: 10px;
+}
+
+.favCollection {
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 95%;
+  display: block;
+  text-align: center;
+}
+
+#localStore_0 {
+  border-radius: 30px;
+  height: 150px;
+  width: auto;
+}
+
+#localStore_0:hover{
+  height: 140px;
+}
+
+#localStore_1 {
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
+}
+
+#localStore_1:hover{
+  height: 140px;
+}
+
+#localStore_2 {
+  border-radius: 30px;
+  height: 150px;
+  width: auto;
+}
+
+#localStore_2:hover{
+  height: 140px;
+}
+
+/* second row */
+
+#utilizeText {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-family: 'Zen Dots';
+  padding-bottom: 40px;
+  padding-top: 260px;
+}
+
+.row2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+.row2 > h3 {
+  padding-top: 5px;
+}
+
+.utilityCollection {
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  width: 95%;
+  display: block;
+  text-align: center;
+  font-family: 'Zen Dots';
+}
+
+#appImage {
+  border-radius: 30px;
+  height: 150px;
+  width: 125px;
+}
+
+#dasherzImage {
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
+}
+
+#expandImage {
+  border-radius: 30px;
+  height: 150px;
+  width: 150px;
 }
