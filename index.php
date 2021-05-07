@@ -54,45 +54,48 @@
 					<br>3) Let us know if you would like pick up or delivery  
 				</p>
 			</article>
+		
+			<section id="bottomContent">
+				<h2 id="favText">Student Favorites</h2>
+
+				<div class="favCollection">
+
+					<div id="favOne" class="row">
+						<a href="https://www.ramonesicecream.com/"><img src="images/ramones.png" id="localStore_0"></a>
+					</div>
+
+					<div id="favTwo" class="row">
+						<a href="http://akamesushiwi.com/default.aspx.htm"><img src="images/akame.png" id="localStore_1"></a>
+					</div>
+
+					<div id="favThree" class="row">
+						<a href="https://www.mcdonalds.com/us/en-us.html"><img src="images/maccas.png" id="localStore_2"></a>
+					</div>
+				</div>
+
+
+				<h2 id="utilizeText">Utilize Desk Dash</h2>
+
+				<div class="utilityCollection"> 
+
+					<div class="row2">
+						<img src="images/appImage_.png" id="appImage">
+						<h1>Desk Dash App!</h1>
+					</div>
+
+					<div class="row2">
+						<img src="images/dasherz.png" id="dasherzImage">
+						<h1>Join the Dasherz!</h1>
+					</div>
+
+					<div class="row2">
+						<img src="images/parter.png" id="expandImage">
+						<h1>Collab with us!</h1>
+					</div>
+
+				</section>
 
 		</main>
-
-		<h1 id="favText">Student Favorites</h1>
-
-      <div class="favCollection">
-
-        <div id="favOne" class="row">
-          <a href="https://www.ramonesicecream.com/"><img src="images/ramones.png" id="localStore_0"></a>
-        </div>
-
-        <div id="favTwo" class="row">
-          <a href="http://akamesushiwi.com/default.aspx.htm"><img src="images/akame.png" id="localStore_1"></a>
-        </div>
-
-        <div id="favThree" class="row">
-          <a href="https://www.mcdonalds.com/us/en-us.html"><img src="images/maccas.png" id="localStore_2"></a>
-        </div>
-      </div>
-
-
-      <h1 id="utilizeText">Utilize Desk Dash</h1>
-
-      <div class="utilityCollection"> 
-
-        <div class="row2">
-          <img src="images/appImage_.png" id="appImage">
-          <h3>Desk Dash App!</h3>
-        </div>
-
-        <div class="row2">
-          <img src="images/dasherz.png" id="dasherzImage">
-          <h3>Join the Dasherz!</h3>
-        </div>
-
-        <div class="row2">
-          <img src="images/parter.png" id="expandImage">
-          <h3>Collab with us!</h3>
-        </div>
 
 	</div>
 	<?php

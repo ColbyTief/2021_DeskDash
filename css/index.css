@@ -8,7 +8,6 @@ main {
   letter-spacing: 2px;
   display: block;
   z-index: 1;
-  padding-bottom: 60px;
 }
 
 .pizza {
@@ -16,6 +15,9 @@ main {
 }
 
 #indexPizza {
+  height: 30%;
+  width: auto;
+  padding-left: 5%;
   border-radius: 15px;
   float: right;
 }
@@ -57,7 +59,7 @@ main article {
 }
 
 .row {
-  float: right;
+  display: inline-block;
   width: 30%;
   padding: 10px;
 }
@@ -114,19 +116,18 @@ main article {
 }
 
 .row2 {
-  float: left;
+  display:inline-block;
   width: 30%;
   padding: 10px;
 }
 
-.row2 > h3 {
-  padding-top: 5px;
+.row2 > h1 {
+  padding-top: 3%;
 }
 
 .utilityCollection {
   margin-left: auto;
   margin-right: auto;
-  float: right;
   width: 95%;
   display: block;
   text-align: center;
@@ -149,4 +150,15 @@ main article {
   border-radius: 30px;
   height: 150px;
   width: 150px;
+}
+
+#bottomContent {
+  background-image: linear-gradient(to bottom, rgba(248, 181, 55, 0), rgba(248, 181, 55, .7));
+  padding-top: 3%;
+  padding-bottom: 8%;
+  margin-top: 3%;
+}
+
+#bottomContent h2 {
+  text-align: center;
 }
