@@ -20,7 +20,7 @@
 
     html {
         background: url('../images/wallpaper.png') repeat;
-        width: 80%;
+        width: 85%;
         margin: auto;
         /*
   padding-bottom: 40px;
