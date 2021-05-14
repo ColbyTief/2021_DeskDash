@@ -40,3 +40,22 @@ img {
   border-radius: 10%;
   position: relative;
 }
+
+/* smartphone */
+
+@media screen and (max-width: 37.5em) {
+  #content {
+    display: inline-block;
+  }
+
+  #content img {
+    height: 150px;
+    width: auto;
+  }
+
+  article p {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
