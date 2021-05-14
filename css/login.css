@@ -11,14 +11,13 @@ body{
 
 form {
   position: relative;
-  left: 15em;
+  left: 20%;
   top: 5em;
 }
 
 #submit {
-  background: #F97432;
-  margin: 0 auto;
-  width: 8%;
+  background: #F97432; 
+  width: 10em;
   padding: .5%;
   border-radius: 5px;
   color: white;
@@ -31,4 +30,12 @@ form {
   border-radius: 10px;
   background: orange;
   box-shadow: 2px 2px 2px #fd671c;
+}
+
+/* smartphone */
+
+@media screen and (max-width: 37.5em) {
+  #content form {
+    left: 3em;
+  }
 }
