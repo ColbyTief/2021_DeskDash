@@ -28,5 +28,7 @@ form {
 }
 
 #submit:hover {
+  border-radius: 10px;
   background: orange;
+  box-shadow: 2px 2px 2px #fd671c;
 }
