@@ -122,7 +122,7 @@ background-size: cover;
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        font-size: 17px;
+        font-size: 20px;
         font-weight: bold;
         font-family: 'Lato';
     }
@@ -194,7 +194,7 @@ background-size: cover;
         .menu > ul > li > a:hover {
             border-radius: 50px;
             border-bottom: 6px solid orange;
-            font-size: 18px;
+            font-size: 25px;
         }
     }
 </style>
