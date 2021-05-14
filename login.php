@@ -10,9 +10,29 @@
 <body>
 	<?php
 	require('header.php');
+  require('functions.php');
+
+  $submitPressed = sanitizeString(INPUT_POST, 'clickIt');
+
+  if (isset($submitPressed)) {
+
+    $user = sanitizeString(INPUT_POST, 'userName');
+    $passWord = sanitizeString(INPUT_POST, 'passWord');
+
+    if ($user != "" && $passWord != "") {
+      $greeting = "Welcome to Desk Dash $user";
+    } else {
+      $greeting = "Please enter a username and password.";
+    }
+  } else {
+    $greeting = "Please login for deliciousness!";
+  }
+
 	?>
   <div id="content">
-    <h3>Please login for deliciousness!</h3>
+    <?php
+      echo "<h3> $greeting </h3>"
+    ?>
           
       <form action="" method="post">
         <label for="userName">Username:</label>
