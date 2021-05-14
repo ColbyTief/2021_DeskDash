@@ -153,4 +153,48 @@ background-size: cover;
         cursor: pointer;
         border-radius: 12px;
     }
+
+    /* smartphone */
+
+    @media screen and (max-width: 37.5em) {
+        header {
+            height: 280px;
+        }
+
+        #shoppingCart {
+            float: left;
+            margin-top: 2%;
+            margin-left: 6px;
+        }
+
+        #menu_img {
+            height: 40px;
+            width: auto;
+            margin-top: 7%;
+            padding-bottom: 3%;
+            margin-left: 17%;
+            position: absolute;
+        }
+
+        .menu > ul {
+            margin-top: 15%;
+            margin-left: 13%;
+        }
+
+        .menu > ul > li {
+            display: block;
+            width: 10em;
+            font-size: 120%;
+            text-align: center;    
+            margin-top: 1%;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .menu > ul > li > a:hover {
+            border-radius: 50px;
+            border-bottom: 6px solid orange;
+            font-size: 18px;
+        }
+    }
 </style>
