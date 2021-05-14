@@ -59,6 +59,20 @@
 		</p>
 	</article>
 
+	<article> 
+		<img src="images/ColbyProfile.jpg" class="bio_pic">
+
+		<p><strong>NAME:<br><br>Colby Tiefenthaler</strong></p>
+
+		<p>
+			<strong>BIO:</strong><br>Not the speediest on the Desk Dash Crew,<br>
+			 but capable of delivering the largest of orders.<br>
+			also the dasher in charge of aquatic delivieries.<br>
+			He is also one of the co-developers of the<br>
+			Desk Dash website.
+		</p>
+	</article>
+
 </div>
 
 </div>

@@ -1,7 +1,7 @@
 body {
     position: relative;
 }
-#typelist {
+.typeList {
 position: relative;
 top: 30px;
 width: 50%;
@@ -11,17 +11,63 @@ list-style-type: none;
 
 }
 
-#typelist li {
+.typeList li {
     color: white;
     text-decoration: none;
     font-size: 24px;
     margin-top: 5px;
     padding: 5px 0px;
-    background-color: rgb(255, 153, 0);
+    
     border-radius: 15px;
 }
 
-#typelist a, a:hover, a:focus, a:active {
+.typeList a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+.foodList {
+    position: relative;
+    list-style-type: none;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    top: 30px;
+    font-weight: bold;
+}
+
+.foodList img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    margin: auto;
+    max-height: 130px;
+}
+
+.foodList li {
+    position: relative;
+    width: 155px;
+    height: 155px;
+    display: inline-block;
+    border: solid #fd671c 3px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #f97432af;
+    
+    
+    
+}
+
+.foodList li p {
+    text-align: center;
+    position: relative;
+}
+
+.foodList li .foodItem {
+    top: 1px;
+}
+.foodList li .cost {
+    top: 117px;
 }
