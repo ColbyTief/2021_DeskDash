@@ -84,7 +84,7 @@
 					</div>
 
 					<div class="row2">
-						<img src="images/dasherz.png" id="dasherzImage">
+					<a  href="dasherzContact.php"><img src="images/dasherz.png" id="dasherzImage"></a>
 						<h1>Join the Dasherz!</h1>
 					</div>
 
