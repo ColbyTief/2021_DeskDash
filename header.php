@@ -1,6 +1,10 @@
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/load.js"></script>
+
 <a href="login.php" id="login">Login</a>
 <a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
 <header>
+    <link rel="stylesheet" href="css/animations.css">
     <a href="index.php"><img src="images/indexlogo.png" id="menu_img"></a>
     <div class="menu">
         <ul>
