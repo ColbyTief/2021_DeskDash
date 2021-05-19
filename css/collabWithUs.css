@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+body{
+  font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif; 
+  font-size:16px;
+}
+
+#formGroup {
+  padding-bottom: 10%;
+}
+
+#collab {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 3%;
+  width: auto;
+}
+
+#shake {
+  width: 100%;
+  height: auto;
+}
+
+article {
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: auto;
+  padding-top: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+#textTitle {
+  padding-top: 5%;
+}
+
+#content > #shoutTitle {
+  text-align: center;
+  padding-bottom: 0.5%;
+}
+
+.spacer{
+  clear:both; 
+  height:1px;
+}
+
+.myform{
+  margin:0 auto;
+  width:400px;
+  height: 600px;
+  padding:14px;
+}
+
+#conForm{
+  border:solid 5px orange;
+  background:#ebf4fb;
+  border-style: ridge;
+  border-radius: 5%;
+}
+
+#conForm h1 {
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+#conForm p{
+  font-size:11px;
+  color:#666666;
+  margin-bottom:20px;
+  border-bottom:solid 1px #b7ddf2;
+  padding-bottom:10px;
+}
+
+#conForm label{
+  display:block;
+  font-weight:bold;
+  text-align:right;
+  width:140px;
+  padding-right: 3px;
+  float:left;
+}
+
+#conForm .small{
+  color:#666666;
+  display:block;
+  font-size:11px;
+  font-weight:normal;
+  text-align:right;
+  width:140px;
+}
+
+#conForm input{
+  float:left;
+  font-size:12px;
+  padding:8px 4px;
+  border:solid 1px #aacfe4;
+  width:200px;
+  margin:2px 0 20px 10px;
+}
+
+#conForm button{ 
+  clear:both;
+  margin-left:160px;
+  width:150px;
+  height:41px;
+  background:#444;
+  text-align:center;
+  line-height:31px;
+  color:#FFFFFF;
+  font-size:16px;
+  font-weight:bold;
+}
+
+/* smartphone */
+
+@media screen and (max-width: 37.5em) {
+  #content {
+    display: inline-block;
+    overflow-x: hidden;
+  }
+
+  #contactUs {
+    padding-top: 5%;
+    font-size: 25px;
+    margin: 0 auto;
+  }
+
+  #contactImg1 {
+    padding: unset;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  article #pNum {
+    padding: unset;
+    margin: 0 auto;
+    font-size: 25px;
+  }
+
+  #content article {
+    margin: 0 auto;
+    padding-bottom: 20%;
+  }
+
+  .myform {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+}

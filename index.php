@@ -89,7 +89,7 @@
 					</div>
 
 					<div class="row2">
-						<img src="images/parter.png" id="expandImage">
+						<a href="collabWithUs.php"><img src="images/parter.png" id="expandImage"></a>
 						<h1>Collab with us!</h1>
 					</div>
 
