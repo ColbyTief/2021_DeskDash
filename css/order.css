@@ -1,24 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
 body {
     position: relative;
+    font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif;
 }
 .typeList {
-position: relative;
-top: 30px;
-width: 50%;
-margin: auto;
-text-align: center;
-list-style-type: none;
+    position: relative;
+    top: 30px;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20%;
+    text-align: center;
+    list-style-type: none;
 
 }
 
 .typeList li {
     color: white;
     text-decoration: none;
-    font-size: 24px;
-    margin-top: 5px;
-    padding: 5px 0px;
+    font-size: 2em;
+    height: 5%;
+    margin-top: 4%;
+    padding: 4%;
     background-color: #ff8041;
     border-radius: 15px;
+}
+
+.typeList li:hover {
+    border-radius: 25px;
+    text-shadow: 2px 2px 2px #fd671c;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #fd671c;
+    background: orange;
 }
 
 .typeList a, a:hover, a:focus, a:active {

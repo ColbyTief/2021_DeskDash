@@ -1,6 +1,10 @@
-<a href="login.php" id="login">Login</a>
-<a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
-<header>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/load.js"></script>
+
+<header class="header">
+    <link rel="stylesheet" href="css/animations.css">
+    <a href="login.php" id="login">Login</a>
+    <a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
     <a href="index.php"><img src="images/indexlogo.png" id="menu_img"></a>
     <div class="menu">
         <ul>
@@ -122,7 +126,7 @@ background-size: cover;
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        font-size: 17px;
+        font-size: 20px;
         font-weight: bold;
         font-family: 'Lato';
     }
@@ -152,5 +156,49 @@ background-size: cover;
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 12px;
+    }
+
+    /* smartphone */
+
+    @media screen and (max-width: 37.5em) {
+        header {
+            height: 280px;
+        }
+
+        #shoppingCart {
+            float: left;
+            margin-top: 2%;
+            margin-left: 6px;
+        }
+
+        #menu_img {
+            height: 40px;
+            width: auto;
+            margin-top: 7%;
+            padding-bottom: 3%;
+            margin-left: 17%;
+            position: absolute;
+        }
+
+        .menu > ul {
+            margin-top: 15%;
+            margin-left: 13%;
+        }
+
+        .menu > ul > li {
+            display: block;
+            width: 10em;
+            font-size: 120%;
+            text-align: center;    
+            margin-top: 1%;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .menu > ul > li > a:hover {
+            border-radius: 50px;
+            border-bottom: 6px solid orange;
+            font-size: 25px;
+        }
     }
 </style>

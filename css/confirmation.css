@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+body{
+  font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif; 
+  background-image: url(../images/dashRecr.jpg);
+  font-size:12px;
+}
+
+#formGroup {
+  padding-bottom: 10%;
+}
+
+#success {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 3%;
+}
+
+#contactImg0 {
+  height: 400px;
+  width: auto;
+  position: relative;
+  float: left;
+}
+
+article {
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: auto;
+  padding-top: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+}
+
+article > #quote {
+  font-size: 30px;
+  padding-left: 45%;
+  text-decoration: none;
+}
+
+#textTitle {
+  padding-top: 5%;
+}
+
+#conf {
+  height: 300px;
+  width: auto;
+  position: relative;
+  padding-right: 4%;
+  border-radius: 20px;
+  float: left;
+  padding-bottom: 5%;
+}
+
+

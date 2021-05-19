@@ -68,3 +68,30 @@ main article {
   font-style: italic;
   text-shadow: 2px 2px 5px #F97432;
 }
+
+/* smartphone */
+
+@media screen and (max-width: 37.5em) {
+  #content {
+    display: inline-block;
+  }
+
+  main article {
+    padding-top: 15%;
+  }
+
+  h2 {
+    float: left;
+    padding-top: 4%;
+    padding-bottom: 2%;
+  }
+
+  h1 {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  p {
+    float: left;
+  }
+}

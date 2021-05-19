@@ -15,7 +15,6 @@
   font-family: sans-serif;
   padding: 30px;
   height: 52;
-  display: flex;
   flex-direction: column-reverse;
 }
 
@@ -38,7 +37,43 @@
   margin-left: auto;
   font-size: 1.5rem;
   margin-bottom: auto;
+  float: right;
 }
 
+.footer > small {
+  float: left;
+  padding-top: 2%;
+}
+
+/* smartphone */
+
+@media screen and (max-width: 37.5em) {
+
+  .footer {
+    height: 90px;
+    padding: 3%;
+  }
+
+  .footer > ul {
+    display: block;
+    float: left;
+    padding-bottom: 3%;
+    padding-left: 7%;
+  }
+
+  .footer > ul > a > img {
+    height: 50px;
+    width: auto;
+    padding-left: 30px;
+    padding-bottom: 4%;
+  }
+
+  .footer > small {
+    float: right;
+    padding-right: 10%;
+    margin-top: -5%; 
+  }
+
+}
 
 </style>

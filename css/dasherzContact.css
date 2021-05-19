@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif; 
+  background-image: url(../images/dashRecr.jpg);
   font-size:12px;
 }
 
@@ -32,7 +33,7 @@ article {
   padding-bottom: 3%;
 }
 
-article > #pNum {
+article > #team {
   font-size: 30px;
   padding-left: 45%;
   text-decoration: none;
@@ -42,7 +43,7 @@ article > #pNum {
   padding-top: 5%;
 }
 
-#contactImg1 {
+#dash {
   height: 300px;
   width: auto;
   position: relative;
@@ -134,43 +135,4 @@ p, h1, form, button{
   color:#FFFFFF;
   font-size:16px;
   font-weight:bold;
-}
-
-/* smartphone */
-
-@media screen and (max-width: 37.5em) {
-  #content {
-    display: inline-block;
-    overflow-x: hidden;
-  }
-
-  #contactUs {
-    padding-top: 5%;
-    font-size: 25px;
-    margin: 0 auto;
-  }
-
-  #contactImg1 {
-    padding: unset;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-  }
-
-  article #pNum {
-    padding: unset;
-    margin: 0 auto;
-    font-size: 25px;
-  }
-
-  #content article {
-    margin: 0 auto;
-    padding-bottom: 20%;
-  }
-
-  .myform {
-    margin: 0 auto;
-    width: 90%;
-  }
-
 }
