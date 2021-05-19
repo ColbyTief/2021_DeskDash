@@ -86,6 +86,7 @@
 		}
 		
 		?> 
+		<form>
 		</ul>
 	<?php 
 
@@ -139,7 +140,7 @@
 			} // end type while
 		?>
 		</ul>
-
+		</form>
 		<?php
 		// check for admin user
 		if ($id < 0) {
