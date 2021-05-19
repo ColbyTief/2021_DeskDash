@@ -9,6 +9,10 @@
 
 <body>
 	<?php
+	if(!session_id()){
+		session_start();
+		$_SESSION['cart'] = array();
+	}
 	require('header.php');
 	require('functions.php');
 	require('dbConnect.php');
@@ -36,9 +40,10 @@
 
 
 			<?php
+			// form to add items
 			$formClicked2 = sanitizeString(INPUT_POST, 'create2');
 			$itemName = sanitizeString(INPUT_POST, 'itemName');
-			
+			// if new item added
 			if (isset($formClicked2) && $itemName != "") {
 				$cost = intval(sanitizeString(INPUT_POST, 'itemCost'));
 				$imagePath = sanitizeString(INPUT_POST, 'imgPath');
@@ -78,15 +83,14 @@
 
 			?>
 
-		<li><img src="/images/food/<?php if (!$imgPath == "" ) { echo "$imgPath";}else{ echo "default.png";} ?>"><p class="foodItem"><?= $foodItem ?></p> 
-		<p class="cost"><?= $costStr ?></p></li>
+		<li><div id="addCart"><input type="submit" value="Add" name="addItem"></div><img src="/images/food/<?php if (!$imgPath == "" ) { echo "$imgPath";}else{ echo "default.png";} ?>"><p class="foodItem"><?= $foodItem ?></p> 
+		<p class="cost"><?= $costStr ?></p><input type="hidden" name="cartItem" value="<?= $foodItem ?>"></li>
 
 		<?php
 
 		}
 		
 		?> 
-		<form>
 		</ul>
 	<?php 
 
@@ -140,7 +144,7 @@
 			} // end type while
 		?>
 		</ul>
-		</form>
+
 		<?php
 		// check for admin user
 		if ($id < 0) {

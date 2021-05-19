@@ -8,7 +8,8 @@
 <body>
 	<?php
 	if(!session_id()){
-		
+		session_start();
+		$_SESSION['cart'] = array();
 	}
 	require('header.php');
 	?>
