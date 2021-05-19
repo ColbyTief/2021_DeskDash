@@ -16,11 +16,44 @@
 	<div id="content">
 
 	<?php
+
+	$id = -1;
 	if(isset($_GET['type'])) {
-		
+		$type = sanitizeString(INPUT_GET, 'type');
+		if ($id < 0) {
+
+			?>
+	<form id="addType" action="" method="post">
+	<p>New Food item here:</p>
+	<label for="itemName">Item: </label>
+	<input type="text" name="itemName">
+	<label for="itemCost">Cost: </label>
+	<input type="text" name="itemCost">
+	<label for="imgPath">Image: </label>
+	<input type="file" name="imgPath">
+	<input type="submit" name="create2" value="create">
+	</form>
+
+
+			<?php
+			$formClicked2 = sanitizeString(INPUT_POST, 'create2');
+			$itemName = sanitizeString(INPUT_POST, 'itemName');
+			
+			if (isset($formClicked2) && $itemName != "") {
+				$cost = intval(sanitizeString(INPUT_POST, 'itemCost'));
+				$imagePath = sanitizeString(INPUT_POST, 'imgPath');
+				$query = "INSERT INTO `fooditems` (`fooditem`, `foodtype`, `imgpath`, `cost`)
+				VALUES ('$itemName', $type, '$imagePath', $cost );";
+
+				$error = "Error inserting new item to database";
+
+				callQuery($pdo, $query, $error);
+				unset($formClicked2);
+			}
+		}
 		// echo '<h2> HELLO! </h2>';
 		// SQL select by food type here 
-		$type = sanitizeString(INPUT_GET, 'type');
+		
 		$query = "SELECT fooditem, imgpath, cost FROM fooditems
 				  WHERE foodtype = $type;";
 		$error = "Error fetching food info";
@@ -45,7 +78,7 @@
 
 			?>
 
-		<li><img src="/images/food/<?php if (!$imgPath == "" || isset($imgPath)) { echo "$imgPath";}else{ echo "default.png";} ?>"><p class="foodItem"><?= $foodItem ?></p> 
+		<li><img src="/images/food/<?php if (!$imgPath == "" ) { echo "$imgPath";}else{ echo "default.png";} ?>"><p class="foodItem"><?= $foodItem ?></p> 
 		<p class="cost"><?= $costStr ?></p></li>
 
 		<?php
@@ -57,16 +90,70 @@
 	<?php 
 
 	} else {
+		// sanitize button
+		$formClicked = sanitizeString(INPUT_POST, 'create');
+		$newType = sanitizeString(INPUT_POST, 'typeName');
+		// if form button is clicked create a new food type
+		if (isset($formClicked) && $newType != "") {
+			$query = "SELECT COUNT(typeName) AS result
+					FROM foodtypes
+					WHERE typeName = '$newType';";
+
+			$error = "problem counting rows";
+			$uniqueType = callQuery($pdo, $query, $error)->fetchcolumn();
+
+			if (!$uniqueType) {
+
+				$query = "INSERT INTO `foodtypes` (`typeName`)
+				VALUES ('$newType');";
+
+				$error = "Error inserting new type to database";
+
+				callQuery($pdo, $query, $error);
+				unset($formClicked);
+			}
+			
+
+
+		}
+
+		$query = "SELECT typeid, typeName FROM foodtypes";
+		$error = "Error fetching food info";
+
+		$typeResult = callQuery($pdo, $query, $error);
+
 	?>
+
 		<h3>Choose a type</h3>
 		<ul class="typeList">
-		<a href="order.php?type=1"><li>American</li></a>
-		<a href="order.php?type=2"><li>Chinese</li></a>
-		<a href="order.php?type=3"><li>Mexican</li></a>
-		<a href="order.php?type=4"><li>Japanese</li></a>
+		<?php
+		// loop through types
+			while ($type = $typeResult->fetch()) {
+
+				$typeName = $type['typeName'];
+				$typeId = $type['typeid'];
+		?>
+		<a href="order.php?type=<?= $typeId ?>"><li><?= $typeName ?></li></a>
+
+		<?php
+			} // end type while
+		?>
 		</ul>
 
 		<?php
+		// check for admin user
+		if ($id < 0) {
+
+			?>
+<form id="addType" action="" method="post">
+<p>New Food Type here:</p>
+<input type="text" name="typeName">
+<input type="submit" name="create" value="create">
+</form>
+
+
+			<?php
+		}
 	}
 		?>
 	</div>

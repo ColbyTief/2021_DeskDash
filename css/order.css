@@ -71,3 +71,15 @@ list-style-type: none;
 .foodList li .cost {
     top: 117px;
 }
+
+
+#addType {
+    position: absolute;
+    text-align: center;
+    width: 220px;
+    height: 60px;
+    bottom: 200px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
