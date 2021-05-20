@@ -36,7 +36,7 @@
 			
 		} else {
 			// test print
-			print_r($_SESSION['cart']);
+			// print_r($_SESSION['cart']);
 		}
 
 
