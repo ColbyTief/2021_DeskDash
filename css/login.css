@@ -35,6 +35,11 @@ form {
 /* smartphone */
 
 @media screen and (max-width: 37.5em) {
+
+  #content {
+    width: 100%;
+  }
+  
   #content form {
     left: 3em;
   }

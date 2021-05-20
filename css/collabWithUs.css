@@ -118,7 +118,7 @@ article {
 @media screen and (max-width: 37.5em) {
   #content {
     display: inline-block;
-    overflow-x: hidden;
+    width: 100%;
   }
 
   #contactUs {
@@ -145,9 +145,32 @@ article {
     padding-bottom: 20%;
   }
 
+  #shoutTitle {
+    margin-bottom: 5%;
+  }
+
   .myform {
     margin: 0 auto;
-    width: 90%;
+    width: 65%;
+    height: auto;
+  }
+
+  #conForm label {
+    padding-bottom: 1%;
+    text-align: left;
+  }
+
+  #conForm .small {
+    text-align: left;
+  }
+
+  #conForm button {
+    margin-left: 18%;
+    margin-bottom: 3%;
+  }
+
+  #conForm {
+    border-radius: 25px;
   }
 
 }

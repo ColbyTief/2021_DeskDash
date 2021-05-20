@@ -141,7 +141,8 @@ p, h1, form, button{
 @media screen and (max-width: 37.5em) {
   #content {
     display: inline-block;
-    overflow-x: hidden;
+    float: none;
+    width: 100%;
   }
 
   #contactUs {
@@ -170,7 +171,27 @@ p, h1, form, button{
 
   .myform {
     margin: 0 auto;
-    width: 90%;
+    width: 70%;
+    height: auto;
+  }
+
+  #conForm {
+    border-radius: 25px;
+  }
+
+  #conForm label {
+    padding-bottom: 1%;
+    text-align: left;
+  }
+
+  #conForm .small {
+    text-align: left;
+  }
+
+  #conForm button {
+    margin-left: 20%;
+    margin-bottom: 3%;
+    
   }
 
 }
