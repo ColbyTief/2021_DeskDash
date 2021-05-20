@@ -3,6 +3,7 @@
 
 <header class="header">
     <link rel="stylesheet" href="css/animations.css">
+    <script src="js/location.js"></script>
     <a href="login.php" id="login">Login</a>
     <a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
     <a href="index.php"><img src="images/indexlogo.png" id="menu_img"></a>

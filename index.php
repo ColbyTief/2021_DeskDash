@@ -5,10 +5,13 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/index.css">
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="js/location.js"></script> -->
 </head>
 
 <body class="pageBody">
 	<?php
+
 	require('header.php');
 	?>
 	<div id="content">
@@ -54,7 +57,7 @@
 					<br>3) Let us know if you would like pick up or delivery  
 				</p>
 			</article>
-		
+	
 			<section id="bottomContent">
 				<h2 id="favText">Student Favorites</h2>
 
@@ -73,13 +76,19 @@
 					</div>
 				</div>
 
+				<div id="map"></div>
+
+				<!-- Implement the map script -->
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqRtMcV8TtkaqPEF9PyBa7zrjLBP1RH5I&callback=initMap"></script>
+				<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqRtMcV8TtkaqPEF9PyBa7zrjLBP1RH5I&callback=initMap&libraries=places&v=weekly"></script> -->
+
 
 				<h2 id="utilizeText">Utilize Desk Dash</h2>
 
 				<div class="utilityCollection"> 
 
 					<div class="row2">
-						<img src="images/appImage_.png" id="appImage">
+						<a href="appAdvert.php"><img src="images/appImage_.png" id="appImage"></a>
 						<h1>Desk Dash App!</h1>
 					</div>
 

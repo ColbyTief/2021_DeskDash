@@ -155,7 +155,7 @@ if (!empty(trim($name)) && $name != "Add your name") {
 
       $numemails = callQuery($pdo, $query, $errorMsg_1)->fetchColumn();
 
-            //Check if new phone already exists in our DB
+      //Check if new phone already exists in our DB
       $query = "SELECT COUNT(phone) 
                 FROM inquiries
                 WHERE phone = '$phone'";
@@ -166,6 +166,8 @@ if (!empty(trim($name)) && $name != "Add your name") {
 
     //Did we find the new username, email or phone in our inquiries table?
     if(!$numusernames && !$numemails && !$numphonenums) { //new username, email and phone was NOT found, so add it.
+      if (filter_var($email, FILTER_VALIDATE_EMAIL)) { //Check for invalid email format.
+
       echo "<h3 style=\"color: #fff;\">New username $name, $phone, $email added</h3>\n";
 
       //Now that we know we want to add a new user, email and phone, 
@@ -207,6 +209,9 @@ if (!empty(trim($name)) && $name != "Add your name") {
         echo "<h3 style=\"color: #fff;\">This message already exists - not added</h3>\n";
       }
 
+    } else { //Bad email was entered
+      echo "<h3>No valid new email was added!</h3>\n";
+    }
 
     } else { //The new inquiry IS a duplicate - DON'T add it.
       echo "<h3 style=\"color: #fff;\">New inquiry already exists - not added</h3>\n";
