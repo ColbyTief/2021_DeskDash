@@ -52,7 +52,7 @@ require ('dbConnect.php');
 
     <div id="conForm" class="myform">
 
-      <form id="form1" id="form1" action="" method="POST">
+      <form id="form1" action="" method="POST">
 
         <label>Name
           <span class="small">Add your name</span>
