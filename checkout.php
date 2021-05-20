@@ -62,7 +62,52 @@
 		?>
 		<tr class="item"><td>Total</td><td><?= $totalCost ?></td><td class="qty"><?= $totalQty ?></td></tr>
 		</table>
-		
+			<?php
+			$message = "";
+			$pay = sanitizeString(INPUT_POST, 'pay');
+			$displayForm = 1;
+			if (isset($pay)) {
+				$displayForm = 0;
+				$address = sanitizeString(INPUT_POST, 'address');
+				$roomNum = sanitizeString(INPUT_POST, 'roomNum');
+				$phone = sanitizeString(INPUT_POST, 'phone');
+				$carNum = sanitizeString(INPUT_POST, 'cardNum');
+				$cardExp = sanitizeString(INPUT_POST, 'cardExp');
+				$cardCvv = sanitizeString(INPUT_POST, 'cardCvv');
+
+				if ($cardCvv == "" || !isset($cardCvv)){
+					$displayForm = 1;
+					$message = "<h4>Please enter the three numbers on the back of the card</h4>";
+				}
+
+				if ($cardExp == "" || !isset($cardExp)){
+					$displayForm = 1;
+					$message = "<h4>Please enter your card's expiration date</h4>";
+				}
+
+				if ($carNum == "" || !isset($carNum)){
+					$displayForm = 1;
+					$message = "<h4>Please enter your card number</h4>";
+				}
+
+				if ($phone == "" || !isset($phone)){
+					$displayForm = 1;
+					$message = "<h4>Please enter a phone number</h4>";
+				}
+
+				if ($address == "" || !isset($address)){
+					$displayForm = 1;
+					$message = "<h4>Please enter an address</h4>";
+				}
+
+
+	
+
+			}
+			if ($displayForm) {
+
+				echo $message;
+			?>
 			<div id="formGroup">
 
 					<div id="conForm" class="myform">
@@ -87,7 +132,7 @@
 						<label for="cardCvv">CVV:</label>
 						<input type="text" name="cardCvv">
 
-						<button name="submit" value="Send" style="margin-top:15px;">Checkout</button>
+						<button name="pay" value="Send" style="margin-top:15px;">Checkout</button>
 						
 						<div class="spacer"></div>
 
@@ -95,10 +140,16 @@
 
 					</div>
 				</div>
-			</div>
+			<?php 
+			} else {
+			?>
 
+<h3>You have successfully checked out!</h3>
+<h3>Your order will arrive shortly</h3>
 
-
+		<?php
+			}
+		?>
 	</div>
 	<?php
 	require('footer.php');

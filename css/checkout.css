@@ -58,6 +58,14 @@ p, h1, form, button{
   padding:0;
 }
 
+h4 {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: 10px;
+}
+
 #content > #shoutTitle {
   text-align: center;
   padding-top: 5%;
