@@ -13,8 +13,18 @@
   require('functions.php');
   require('dbConnect.php');
 
+  ?>
+<div id="content">
+  <?php
   $errorMsg = "Issue with database.";
+  // if user is logged in
+  if (!isset($logout)) {
+  $logout = sanitizeString(INPUT_GET, 'logout');
+  }
 
+ 
+  if (!isset($_SESSION['id'])){
+  $loggedIn = 0;
   $submitPressedLogIn = sanitizeString(INPUT_POST, 'logIn');
   $submitPressedSignUp = sanitizeString(INPUT_POST, 'signUp');
   $user = trim(sanitizeString(INPUT_POST, 'userName'));
@@ -24,9 +34,6 @@
 
   if (isset($submitPressedLogIn)) {// Form was submitted.
 
-    $userResult = callquery($pdo, 'SELECT * FROM `login`', 
-                            'Error fetching users');
-
     if ($user != "" && $passWord != "") {
       $query = "SELECT COUNT(username)
       FROM `login`
@@ -34,9 +41,13 @@
 
 
 
-      $numUsers = callQuery($pdo, $query, $errorMsg)->fetchColumn();
+      $numUsers = callQuery($pdo, $query, $errorMsg)->fetchcolumn();
 
       if ($numUsers) {
+        $query = "SELECT userid FROM `login` 
+                  WHERE `username` = '$user' AND `password` = '$passWord'";
+        $_SESSION["id"] = callQuery($pdo, $query, 'Error fetching user id')->fetchcolumn();
+        $loggedIn = 1;
         $greeting = "Welcome back to desk dash $user!";
       } else {
         $greeting = "This user could not be found, please check credentials or sign up.";
@@ -64,6 +75,7 @@
           callQuery($pdo, $query, $errorMsg);
 
           $greeting = "Welcome new user $user we hope you enjoy!";
+          
 
         } else {
           $greeting = "This user already exists, try a different username.";
@@ -78,9 +90,10 @@
   
 
 	?>
-  <div id="content">
+  
     <?php
-      echo "<h3> $greeting </h3>"
+      echo "<h3> $greeting </h3>";
+      if (!$loggedIn){
     ?>
           
       <form action="" method="post">
@@ -95,10 +108,25 @@
         <input type="submit" name="logIn" value="Log In" id="submit">
         <input type="submit" name="signUp" value="Sign Up" id="submit">
       </form>
-  </div>
+  
+  
 	<?php
+      }
+  } elseif ($logout == "yes") {
+    unset($_SESSION['id']);
+    echo "<h3> You have successfully been logged out<h3>";
+  } else {
+    ?>
+    <h3> You are currently logged in to Desk Dash<h3>
+    <?php
+  }
+
+  ?>
+</div>
+  <?php
 	require('footer.php');
 	?>
+  
 </body>
 
 </html>

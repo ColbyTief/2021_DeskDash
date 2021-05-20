@@ -20,7 +20,11 @@
 
 	<?php
 	// temporary value for an admin user id
-	$id = -1;
+	if (isset($_SESSION['id'])){
+		$id = $_SESSION['id'];
+	} else {
+		$id = 0;
+	}
 	// if a restaurant has been chosen
 	if(isset($_GET['type'])) {
 		$type = sanitizeString(INPUT_GET, 'type');

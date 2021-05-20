@@ -2,9 +2,14 @@
 <script src="js/load.js"></script>
 
 <header class="header">
+
+<?php 	
+if(!session_id()){
+		session_start();	
+	}?>
     <link rel="stylesheet" href="css/animations.css">
     <script src="js/location.js"></script>
-    <a href="login.php" id="login">Login</a>
+    <a href="login.php<?php if (isset($_SESSION['id'])){echo "?logout=yes";}?>" id="login"><?php if (isset($_SESSION['id'])) { echo "logout";} else {echo "login";}?></a>
     <a href="checkout.php"><img src="images/cart.png" id="shoppingCart"></a>
     <a href="index.php"><img src="images/indexlogo.png" id="menu_img"></a>
     <div class="menu">
